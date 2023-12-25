@@ -1,0 +1,105 @@
+{
+    "format_version": 2,
+    "tooth": "github.com/tooth-hub/bdsdown",
+    "version": "0.4.0",
+    "info": {
+        "name": "bdsdown",
+        "description": "Downloader for Minecraft BDS",
+        "author": "LiteLDev",
+        "tags": []
+    },
+    "platforms": [
+        {
+            "goos": "darwin",
+            "goarch": "amd64",
+            "files": {
+                "place": [
+                    {
+                        "src": "darwin/amd64/bdsdown",
+                        "dest": ".lip/tools/bdsdown/bdsdown"
+                    }
+                ]
+            },
+            "commands": {
+                "post_install": [
+                    "chmod +x ./.lip/tools/bdsdown/bdsdown"
+                ]
+            }
+        },
+        {
+            "goos": "darwin",
+            "goarch": "arm64",
+            "files": {
+                "place": [
+                    {
+                        "src": "darwin/arm64/bdsdown",
+                        "dest": ".lip/tools/bdsdown/bdsdown"
+                    }
+                ]
+            },
+            "commands": {
+                "post_install": [
+                    "chmod +x ./.lip/tools/bdsdown/bdsdown"
+                ]
+            }
+        },
+        {
+            "goos": "linux",
+            "goarch": "amd64",
+            "files": {
+                "place": [
+                    {
+                        "src": "linux/amd64/bdsdown",
+                        "dest": ".lip/tools/bdsdown/bdsdown"
+                    }
+                ]
+            },
+            "commands": {
+                "post_install": [
+                    "chmod +x ./.lip/tools/bdsdown/bdsdown"
+                ]
+            }
+        },
+        {
+            "goos": "linux",
+            "goarch": "arm64",
+            "files": {
+                "place": [
+                    {
+                        "src": "linux/arm64/bdsdown",
+                        "dest": ".lip/tools/bdsdown/bdsdown"
+                    }
+                ]
+            },
+            "commands": {
+                "post_install": [
+                    "chmod +x ./.lip/tools/bdsdown/bdsdown"
+                ]
+            }
+        },
+        {
+            "goos": "windows",
+            "goarch": "amd64",
+            "files": {
+                "place": [
+                    {
+                        "src": "windows/amd64/bdsdown.exe",
+                        "dest": ".lip/tools/bdsdown/bdsdown.exe"
+                    }
+                ]
+            }
+        },
+        {
+            "goos": "windows",
+            "goarch": "arm64",
+            "files": {
+                "place": [
+                    {
+                        "src": "windows/arm64/bdsdown.exe",
+                        "dest": ".lip/tools/bdsdown/bdsdown.exe"
+                    }
+                ]
+            }
+        }
+    ]
+}
